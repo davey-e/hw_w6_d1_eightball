@@ -15,4 +15,10 @@ public class EightBallTest {
     public void answersArrayListHasLength(){
         assertEquals(0, eightBall.getAnswerCount());
     }
+
+    @Test
+    public void canAddItemsToAnswers(){
+        eightBall.addAnswer("Yes");
+        assertEquals(1, eightBall.getAnswerCount());
+    }
 }

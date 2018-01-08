@@ -11,4 +11,8 @@ public class EightBall {
     public int getAnswerCount() {
         return this.answers.size();
     }
+
+    public void addAnswer(String answer) {
+        this.answers.add(answer);
+    }
 }
