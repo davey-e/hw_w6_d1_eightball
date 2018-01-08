@@ -10,15 +10,20 @@ public class EightBallTest {
     @Before
     public void before(){
         eightBall = new EightBall();
+        eightBall.addAnswer("Most likely");
+        eightBall.addAnswer("Ask again later");
+        eightBall.addAnswer("Very doubtful");
     }
     @Test
     public void answersArrayListHasLength(){
-        assertEquals(0, eightBall.getAnswerCount());
+        assertEquals(3, eightBall.getAnswerCount());
     }
 
     @Test
     public void canAddItemsToAnswers(){
         eightBall.addAnswer("Yes");
-        assertEquals(1, eightBall.getAnswerCount());
+        assertEquals(4, eightBall.getAnswerCount());
     }
+
+
 }
