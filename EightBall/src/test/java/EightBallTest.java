@@ -25,5 +25,5 @@ public class EightBallTest {
         assertEquals(4, eightBall.getAnswerCount());
     }
 
-
+    
 }
