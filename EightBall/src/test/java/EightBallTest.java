@@ -25,5 +25,11 @@ public class EightBallTest {
         assertEquals(4, eightBall.getAnswerCount());
     }
 
-    
+    @Test
+    public void canRemoveItemsFromAnswers(){
+        eightBall.removeAnswer("Yes");
+        assertEquals(3, eightBall.getAnswerCount());
+    }
+
+
 }

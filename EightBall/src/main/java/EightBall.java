@@ -21,4 +21,9 @@ public class EightBall {
         Collections.shuffle(this.answers);
         return this.answers.get(0);
     }
+
+
+    public void removeAnswer(String answer) {
+        this.answers.remove(answer);
+    }
 }
